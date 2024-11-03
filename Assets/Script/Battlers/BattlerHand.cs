@@ -18,9 +18,12 @@ public class BattlerHand : MonoBehaviour
         list.Remove(card);
     }
 
-    //ƒJ[ƒh‚ÌˆÊ’u‚ÆŠÔŠu
+    //èD‚ğ®“Ú‚·‚é(ˆÊ’uEŠÔŠuE‡)
     public void ResetPosition()
     {
+        //Sort:Number‚Ì¬‚³‚¢‡‚É•À‚×‚é
+        list.Sort((card0, card1) => card0.Base.Number - card1.Base.Number);
+
         for (int i = 0; i < list.Count; i++)
         {
             float posX = (i-list.Count/2) * 1.4f;
