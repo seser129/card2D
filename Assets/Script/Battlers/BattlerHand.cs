@@ -30,4 +30,17 @@ public class BattlerHand : MonoBehaviour
             list[i].transform.localPosition = new Vector3(posX, 0);
         }
     }
+
+    //ランダムでカードを選ぶ
+    public Card RandomRemove()
+    {
+        //ランダム
+        int r = Random.Range(0, list.Count);
+        Card card = list[r];
+        //抜き取る
+        Remove(card);
+        return card;
+    }
+
+
 }

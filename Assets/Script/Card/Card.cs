@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.Events;//ŠÖ”‚ğ“o˜^‚·‚é
 using UnityEngine.UI;
 
 public class Card : MonoBehaviour

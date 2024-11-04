@@ -15,8 +15,11 @@ public class SubmitPosition : MonoBehaviour
         submitCard = card;
         card.transform.SetParent(transform);//q—v‘f
         card.transform.position = transform.position;//êŠ
-
-
     }
 
+    public void DeleteCard()
+    {
+        Destroy(submitCard.gameObject);
+        submitCard = null;
+    }
 }
