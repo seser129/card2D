@@ -12,6 +12,8 @@ public class Battler : MonoBehaviour
 
     public BattlerHand Hand { get => hand;  }
     public Card SubmitCard { get => submitPosition.SubmitCard; }
+    public int Life { get; set; }
+
 
     //このタイミングでBattlerはカードを認識できる
     //自分の関数に登録しておく
